@@ -1,7 +1,14 @@
 import { Button } from "./button";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/jharkhand-hero.jpg";
 
 export const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleExploreClick = () => {
+    navigate("/explore");
+  };
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -28,7 +35,7 @@ export const HeroSection = () => {
           Jharkhand is the place to discover this season.
         </p>
 
-        <Button variant="hero" size="lg" className="shadow-hero">
+        <Button variant="hero" size="lg" className="shadow-hero" onClick={handleExploreClick}>
           Discover 99 ways to explore Jharkhand
         </Button>
 
