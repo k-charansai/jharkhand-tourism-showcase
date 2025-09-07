@@ -14,7 +14,7 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
   const navItems = [
     { label: "Explore Jharkhand", href: "/explore" },
     { label: "Things to do", href: "#activities" },
-    { label: "Places to Stay", href: "#stay" },
+    { label: "Places to Stay", href: "/places-to-stay" },
     { label: "Events & Festivals", href: "#events" },
     { label: "Plan your trip", href: "#plan" },
     { label: "Travel Deals", href: "/travel-deals" },
