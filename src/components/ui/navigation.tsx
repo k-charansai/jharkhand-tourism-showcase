@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Search, Calendar, Heart } from "lucide-react";
 import { Button } from "./button";
+import { TripPlannerChatbot } from "./trip-planner-chatbot";
 
 interface NavigationProps {
   className?: string;
@@ -8,6 +9,7 @@ interface NavigationProps {
 
 export const Navigation = ({ className = "" }: NavigationProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
 
   const navItems = [
     { label: "Explore Jharkhand", href: "#explore" },
@@ -53,7 +55,7 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
             <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
               <Heart className="h-5 w-5" />
             </Button>
-            <Button variant="default">
+            <Button variant="default" onClick={() => setIsChatbotOpen(true)}>
               Plan Trip
             </Button>
           </div>
@@ -87,7 +89,14 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
                 <Button variant="outline" className="w-full">
                   Search
                 </Button>
-                <Button variant="default" className="w-full">
+                <Button 
+                  variant="default" 
+                  className="w-full"
+                  onClick={() => {
+                    setIsChatbotOpen(true);
+                    setIsMenuOpen(false);
+                  }}
+                >
                   Plan Trip
                 </Button>
               </div>
@@ -95,6 +104,11 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
           </div>
         )}
       </div>
+
+      <TripPlannerChatbot 
+        isOpen={isChatbotOpen}
+        onClose={() => setIsChatbotOpen(false)}
+      />
     </nav>
   );
 };
