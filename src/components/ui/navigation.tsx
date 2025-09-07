@@ -56,7 +56,7 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
               <Heart className="h-5 w-5" />
             </Button>
             <Button variant="default" onClick={() => setIsChatbotOpen(true)}>
-              Plan Trip
+              Plan Trip with AI
             </Button>
           </div>
 
@@ -97,7 +97,7 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
                     setIsMenuOpen(false);
                   }}
                 >
-                  Plan Trip
+                  Plan Trip with AI
                 </Button>
               </div>
             </div>
