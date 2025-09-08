@@ -13,7 +13,7 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
 
   const navItems = [
     { label: "Explore Jharkhand", href: "/explore" },
-    { label: "Things to do", href: "#activities" },
+    { label: "Discover More", href: "/discover-more" },
     { label: "Places to Stay", href: "/places-to-stay" },
     { label: "Events & Festivals", href: "#events" },
     { label: "Plan your trip", href: "#plan" },
