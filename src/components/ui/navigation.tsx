@@ -15,7 +15,6 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
     { label: "Explore Jharkhand", href: "/explore" },
     { label: "Discover More", href: "/discover-more" },
     { label: "Places to Stay", href: "/places-to-stay" },
-    { label: "Plan your trip", href: "#plan" },
     { label: "Travel Deals", href: "/travel-deals" },
   ];
 
@@ -54,8 +53,12 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
             <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
               <Heart className="h-5 w-5" />
             </Button>
-            <Button variant="default" onClick={() => setIsChatbotOpen(true)}>
-              Plan Trip with AI
+            <Button 
+              variant="default" 
+              onClick={() => setIsChatbotOpen(true)}
+              className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 text-white font-semibold animate-pulse shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white/20"
+            >
+              ✨ Plan Trip with AI ✨
             </Button>
           </div>
 
@@ -90,13 +93,13 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
                 </Button>
                 <Button 
                   variant="default" 
-                  className="w-full"
+                  className="w-full bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 text-white font-semibold animate-pulse shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white/20"
                   onClick={() => {
                     setIsChatbotOpen(true);
                     setIsMenuOpen(false);
                   }}
                 >
-                  Plan Trip with AI
+                  ✨ Plan Trip with AI ✨
                 </Button>
               </div>
             </div>
