@@ -15,7 +15,6 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
     { label: "Explore Jharkhand", href: "/explore" },
     { label: "Discover More", href: "/discover-more" },
     { label: "Places to Stay", href: "/places-to-stay" },
-    { label: "Events & Festivals", href: "#events" },
     { label: "Plan your trip", href: "#plan" },
     { label: "Travel Deals", href: "/travel-deals" },
   ];
