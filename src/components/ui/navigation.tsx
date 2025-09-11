@@ -3,6 +3,7 @@ import { Menu, X, Search, Calendar, Heart } from "lucide-react";
 import { Button } from "./button";
 import { TripPlannerChatbot } from "./trip-planner-chatbot";
 import { SearchDialog } from "./search-dialog";
+import { TravelCalendar } from "./travel-calendar";
 
 interface NavigationProps {
   className?: string;
@@ -12,6 +13,7 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 
   const navItems = [
     { label: "Explore Jharkhand", href: "/explore" },
@@ -54,7 +56,12 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
             >
               <Search className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="text-muted-foreground hover:text-foreground"
+              onClick={() => setIsCalendarOpen(true)}
+            >
               <Calendar className="h-5 w-5" />
             </Button>
             <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
@@ -129,6 +136,11 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
       <SearchDialog 
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}
+      />
+      
+      <TravelCalendar 
+        isOpen={isCalendarOpen}
+        onClose={() => setIsCalendarOpen(false)}
       />
     </nav>
   );
