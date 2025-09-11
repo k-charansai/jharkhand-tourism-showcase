@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X, Search, Calendar, Heart } from "lucide-react";
 import { Button } from "./button";
 import { TripPlannerChatbot } from "./trip-planner-chatbot";
+import { SearchDialog } from "./search-dialog";
 
 interface NavigationProps {
   className?: string;
@@ -10,6 +11,7 @@ interface NavigationProps {
 export const Navigation = ({ className = "" }: NavigationProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const navItems = [
     { label: "Explore Jharkhand", href: "/explore" },
@@ -44,7 +46,12 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
 
           {/* Action Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="text-muted-foreground hover:text-foreground"
+              onClick={() => setIsSearchOpen(true)}
+            >
               <Search className="h-5 w-5" />
             </Button>
             <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
@@ -88,7 +95,14 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
                 </a>
               ))}
               <div className="pt-4 border-t border-border space-y-2">
-                <Button variant="outline" className="w-full">
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => {
+                    setIsSearchOpen(true);
+                    setIsMenuOpen(false);
+                  }}
+                >
                   Search
                 </Button>
                 <Button 
@@ -110,6 +124,11 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
       <TripPlannerChatbot 
         isOpen={isChatbotOpen}
         onClose={() => setIsChatbotOpen(false)}
+      />
+      
+      <SearchDialog 
+        isOpen={isSearchOpen}
+        onClose={() => setIsSearchOpen(false)}
       />
     </nav>
   );
