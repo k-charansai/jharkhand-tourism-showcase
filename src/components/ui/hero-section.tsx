@@ -11,38 +11,37 @@ export const HeroSection = () => {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Beautiful Jharkhand landscape with waterfalls and forests"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-hero"></div>
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-2xl">
           Welcome to{" "}
-          <span className="bg-gradient-accent bg-clip-text text-transparent">
+          <span className="bg-gradient-accent bg-clip-text text-transparent drop-shadow-2xl">
             Jharkhand
           </span>
         </h1>
         
-        <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl mb-8 text-white max-w-2xl mx-auto leading-relaxed drop-shadow-xl font-medium">
           Pristine waterfalls, ancient forests and tribal heritage like no other – 
           Jharkhand is the place to discover this season.
         </p>
 
-        <Button variant="hero" size="lg" className="shadow-hero" onClick={handleExploreClick}>
+        <Button variant="hero" size="lg" className="shadow-hero drop-shadow-lg" onClick={handleExploreClick}>
           Discover 99 ways to explore Jharkhand
         </Button>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2"></div>
+          <div className="w-6 h-10 border-2 border-white/80 rounded-full flex justify-center drop-shadow-lg">
+            <div className="w-1 h-3 bg-white rounded-full mt-2 drop-shadow-sm"></div>
           </div>
         </div>
       </div>
