@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/ui/navigation";
 import { HeroSection } from "@/components/ui/hero-section";
 import { FeaturedActivities } from "@/components/ui/featured-activities";
+import TravelerExperiences from "@/components/ui/traveler-experiences";
 
 const Index = () => {
   return (
@@ -9,6 +10,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <FeaturedActivities />
+        <TravelerExperiences />
         
         {/* Stats Section */}
         <section className="py-16 bg-primary">
