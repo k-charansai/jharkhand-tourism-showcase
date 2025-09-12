@@ -137,15 +137,15 @@ const Explore = () => {
 
                 <Card className="hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <CardTitle className="text-lg text-primary">Rock Garden</CardTitle>
-                    <Badge variant="secondary" className="w-fit">Ranchi District</Badge>
+                    <CardTitle className="text-lg text-primary">Jamshedpur</CardTitle>
+                    <Badge variant="secondary" className="w-fit">East Singhbhum District</Badge>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground mb-2">Artificial tourist spot with rock formations, gardens, and Kanke Dam nearby.</p>
+                    <p className="text-sm text-muted-foreground mb-2">Steel City with Tata Steel Plant, Jubilee Park, and XLRI management institute.</p>
                     <div className="space-y-1 text-xs">
-                      <p><strong>Entry Fee:</strong> ₹20 per person</p>
-                      <p><strong>Timing:</strong> 9 AM - 7 PM</p>
-                      <p><strong>Activities:</strong> Boating, Photography</p>
+                      <p><strong>Founded:</strong> 1907 by J.N. Tata</p>
+                      <p><strong>Attractions:</strong> Jubilee Park, Dalma Hills</p>
+                      <p><strong>Industry:</strong> Steel, Auto, Heavy Engineering</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -182,15 +182,105 @@ const Explore = () => {
 
                 <Card className="hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <CardTitle className="text-lg text-primary">Jagannath Temple</CardTitle>
+                    <CardTitle className="text-lg text-primary">Jonha Falls</CardTitle>
                     <Badge variant="secondary" className="w-fit">Ranchi District</Badge>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground mb-2">17th-century temple replica of Puri's famous Jagannath Temple.</p>
+                    <p className="text-sm text-muted-foreground mb-2">43-meter waterfall also known as Gautamdhara, mythologically significant.</p>
                     <div className="space-y-1 text-xs">
-                      <p><strong>Built:</strong> 1691 AD</p>
-                      <p><strong>Festival:</strong> Rath Yatra (June-July)</p>
-                      <p><strong>Architecture:</strong> Kalinga style</p>
+                      <p><strong>Distance:</strong> 40 km from Ranchi</p>
+                      <p><strong>Legend:</strong> Buddha's meditation spot</p>
+                      <p><strong>Activities:</strong> Trekking, Photography</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Maithon Dam</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Dhanbad District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">Major hydroelectric project on Barakar River with beautiful lake views.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Capacity:</strong> 60,000 million gallons</p>
+                      <p><strong>Activities:</strong> Boating, Fishing</p>
+                      <p><strong>Best Time:</strong> Oct-Mar</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Palamau Fort</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Latehar District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">Historic fort complex with New Fort (1660) and Old Fort (16th century).</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Built By:</strong> Chero Dynasty</p>
+                      <p><strong>Architecture:</strong> Mughal influence</p>
+                      <p><strong>Distance:</strong> 24 km from Daltonganj</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Sita Falls</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Ranchi District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">Natural pool waterfall perfect for picnics and swimming activities.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Distance:</strong> 60 km from Ranchi</p>
+                      <p><strong>Depth:</strong> Natural swimming pool</p>
+                      <p><strong>Best Time:</strong> Post-monsoon</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Topchanchi Lake</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Dhanbad District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">Scenic lake surrounded by hills, ideal for weekend getaways and water sports.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Area:</strong> 8.75 sq km</p>
+                      <p><strong>Activities:</strong> Boating, Bird watching</p>
+                      <p><strong>Accommodation:</strong> Tourist lodge available</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Deori Temple</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Giridih District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">Ancient Shiva temple with archaeological significance dating back centuries.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Age:</strong> 500+ years old</p>
+                      <p><strong>Architecture:</strong> Ancient stone work</p>
+                      <p><strong>Festival:</strong> Maha Shivratri</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Dalma Wildlife Sanctuary</CardTitle>
+                    <Badge variant="secondary" className="w-fit">East Singhbhum District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">Elephant corridor and wildlife sanctuary on Dalma Hills near Jamshedpur.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Area:</strong> 193.22 sq km</p>
+                      <p><strong>Wildlife:</strong> Elephants, Leopards, Bears</p>
+                      <p><strong>Altitude:</strong> 3,000 feet above sea level</p>
                     </div>
                   </CardContent>
                 </Card>
