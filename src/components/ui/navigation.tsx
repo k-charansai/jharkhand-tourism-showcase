@@ -70,7 +70,7 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
             <Button 
               variant="default" 
               onClick={() => setIsChatbotOpen(true)}
-              className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 text-white font-semibold animate-pulse shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white/20"
+              className="relative bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 before:absolute before:inset-0 before:rounded-md before:p-[2px] before:bg-gradient-to-r before:from-cyan-400 before:via-blue-500 before:to-purple-500 before:animate-spin before:opacity-50 before:-z-10 before:blur-[1px]"
             >
               ✨ Plan Trip with AI ✨
             </Button>
@@ -114,7 +114,7 @@ export const Navigation = ({ className = "" }: NavigationProps) => {
                 </Button>
                 <Button 
                   variant="default" 
-                  className="w-full bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 text-white font-semibold animate-pulse shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white/20"
+                  className="relative w-full bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 before:absolute before:inset-0 before:rounded-md before:p-[2px] before:bg-gradient-to-r before:from-cyan-400 before:via-blue-500 before:to-purple-500 before:animate-spin before:opacity-50 before:-z-10 before:blur-[1px]"
                   onClick={() => {
                     setIsChatbotOpen(true);
                     setIsMenuOpen(false);
