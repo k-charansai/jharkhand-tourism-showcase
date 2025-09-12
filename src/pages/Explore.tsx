@@ -47,11 +47,18 @@ const Explore = () => {
           
           <div className="bg-card rounded-xl p-8 shadow-lg border">
             <div className="max-w-4xl mx-auto">
-              <img
-                src={jharkhandMapUrl}
-                alt="Interactive map of Jharkhand showing all districts, major cities, and tourist attractions"
-                className="w-full h-auto rounded-lg shadow-md"
-              />
+              <div className="w-full h-96 rounded-lg overflow-hidden shadow-md mb-8">
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dw901SwHSR3g2Q&q=tourist+places+in+jharkhand&zoom=8&center=23.3852802,83.940329"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Tourist Places in Jharkhand"
+                ></iframe>
+              </div>
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 <Card>
                   <CardHeader>
