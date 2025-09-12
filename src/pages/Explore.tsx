@@ -59,31 +59,164 @@ const Explore = () => {
                   title="Tourist Places in Jharkhand"
                 ></iframe>
               </div>
-              <div className="grid md:grid-cols-3 gap-6 mt-8">
-                <Card>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                <Card className="hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <CardTitle className="text-lg">Northern Region</CardTitle>
+                    <CardTitle className="text-lg text-primary">Betla National Park</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Latehar District</Badge>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">Chatra, Hazaribagh, Koderma, Giridih - Known for coal mines and scenic landscapes</p>
+                    <p className="text-sm text-muted-foreground mb-2">Tiger reserve with elephants, leopards, and rich biodiversity in 979 sq km area.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Best Time:</strong> Nov-May</p>
+                      <p><strong>Entry:</strong> ₹25 (Indians), ₹300 (Foreigners)</p>
+                      <p><strong>Safari:</strong> 6 AM - 6 PM</p>
+                    </div>
                   </CardContent>
                 </Card>
-                <Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <CardTitle className="text-lg">Central Region</CardTitle>
+                    <CardTitle className="text-lg text-primary">Hundru Falls</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Ranchi District</Badge>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">Ranchi, Bokaro, Dhanbad - Industrial heartland and state capital region</p>
+                    <p className="text-sm text-muted-foreground mb-2">98m high waterfall on Subarnarekha River, perfect for nature photography.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Distance:</strong> 45 km from Ranchi</p>
+                      <p><strong>Best Time:</strong> Monsoon & Post-monsoon</p>
+                      <p><strong>Activities:</strong> Photography, Picnic</p>
+                    </div>
                   </CardContent>
                 </Card>
-                <Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <CardTitle className="text-lg">Southern Region</CardTitle>
+                    <CardTitle className="text-lg text-primary">Netarhat</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Latehar District</Badge>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">Gumla, Simdega, Latehar - Pristine forests and tribal heritage</p>
+                    <p className="text-sm text-muted-foreground mb-2">Queen of Chotanagpur plateau, hill station with sunrise/sunset views.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Altitude:</strong> 1,128 meters</p>
+                      <p><strong>Climate:</strong> Pleasant year-round</p>
+                      <p><strong>Attractions:</strong> Lower Ghaghri Falls</p>
+                    </div>
                   </CardContent>
                 </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Baidyanath Temple</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Deoghar District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">One of 12 Jyotirlingas, major pilgrimage site attracting millions annually.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Festival:</strong> Shravani Mela (Jul-Aug)</p>
+                      <p><strong>Timing:</strong> 4 AM - 3:30 PM, 6 PM - 9 PM</p>
+                      <p><strong>Distance:</strong> 250 km from Ranchi</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Parasnath Hills</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Giridih District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">Highest peak in Jharkhand (1,365m), sacred to Jains with 24 temples.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Trek Duration:</strong> 3-4 hours</p>
+                      <p><strong>Difficulty:</strong> Moderate</p>
+                      <p><strong>Temples:</strong> 20 Jain temples on peak</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Rock Garden</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Ranchi District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">Artificial tourist spot with rock formations, gardens, and Kanke Dam nearby.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Entry Fee:</strong> ₹20 per person</p>
+                      <p><strong>Timing:</strong> 9 AM - 7 PM</p>
+                      <p><strong>Activities:</strong> Boating, Photography</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Hazaribagh National Park</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Hazaribagh District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">Wildlife sanctuary known for 186 bird species and scenic landscapes.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Area:</strong> 186 sq km</p>
+                      <p><strong>Wildlife:</strong> Sambhar, Chital, Wild boar</p>
+                      <p><strong>Best Time:</strong> Nov-Mar</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Dassam Falls</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Ranchi District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">44-meter cascade waterfall formed by Kanchi River, spectacular in monsoons.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Distance:</strong> 40 km from Ranchi</p>
+                      <p><strong>Best Time:</strong> July - October</p>
+                      <p><strong>Activities:</strong> Trekking, Photography</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">Jagannath Temple</CardTitle>
+                    <Badge variant="secondary" className="w-fit">Ranchi District</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-2">17th-century temple replica of Puri's famous Jagannath Temple.</p>
+                    <div className="space-y-1 text-xs">
+                      <p><strong>Built:</strong> 1691 AD</p>
+                      <p><strong>Festival:</strong> Rath Yatra (June-July)</p>
+                      <p><strong>Architecture:</strong> Kalinga style</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+              
+              <div className="mt-8 p-6 bg-muted/30 rounded-lg">
+                <h3 className="text-xl font-semibold mb-4">Plan Your Visit</h3>
+                <div className="grid md:grid-cols-2 gap-6 text-sm">
+                  <div>
+                    <h4 className="font-medium mb-2 text-primary">Getting Around</h4>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li>• Ranchi Airport connects to major cities</li>
+                      <li>• Extensive rail network via Ranchi Junction</li>
+                      <li>• State transport buses to all districts</li>
+                      <li>• Taxi services available for tourist circuits</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2 text-primary">Best Time to Visit</h4>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li>• <strong>Winter (Nov-Feb):</strong> Pleasant weather, ideal for sightseeing</li>
+                      <li>• <strong>Monsoon (Jul-Sep):</strong> Best for waterfalls</li>
+                      <li>• <strong>Summer (Mar-Jun):</strong> Hot, avoid peak summer</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
